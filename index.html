@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="theme-switcher">
+        <button onclick="setTheme('light')">Світла тема</button>
+        <button onclick="setTheme('dark')">Темна тема</button>
+    </div>
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">×</button>
+        <ul>
+            <li><a href="⠀⠀⠀⠀">⠀⠀⠀</a></li>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="index1.html">Підручники</a></li>
+        </ul>
+    </div>
+
+    <!-- Menu Button -->
+    <button class="menu-button" onclick="toggleSidebar()">☰ Меню</button>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Ласкаво просимо на головну сторінку!</h1>
+
+        <!-- Новости -->
+        <section class="news-section">
+            <h2>Останні новини</h2>
+            <ul class="news-list">
+                <li>📰 Новина 1: Розпочато набір на новий навчальний рік!</li>
+                <li>📰 Новина 2: Оновлено базу підручників для 4 класу.</li>
+                <li>📰 Новина 3: Запущено інтерактивний чат-бот для студентів.</li>
+            </ul>
+        </section>
+
+        <!-- Разговор с ИИ -->
+
+        <canvas id="snowCanvas"></canvas>
+
+        <div class="garland">
+            <span class="bulb" style="background: red;"></span>
+            <span class="bulb" style="background: green;"></span>
+            <span class="bulb" style="background: blue;"></span>
+            <span class="bulb" style="background: red;"></span>
+            <span class="bulb" style="background: green;"></span>
+            <span class="bulb" style="background: blue;"></span>
+            <span class="bulb" style="background: red;"></span>
+            <span class="bulb" style="background: green;"></span>
+            <span class="bulb" style="background: blue;"></span>
+            <span class="bulb" style="background: red;"></span>
+            <span class="bulb" style="background: green;"></span>
+            <span class="bulb" style="background: blue;"></span>
+            <span class="bulb" style="background: red;"></span>
+            <span class="bulb" style="background: green;"></span>
+            <span class="bulb" style="background: blue;"></span>
+            <span class="bulb" style="background: red;"></span>
+            <span class="bulb" style="background: green;"></span>
+            <span class="bulb" style="background: blue;"></span>
+            <span class="bulb" style="background: red;"></span>
+            <span class="bulb" style="background: green;"></span>
+            <span class="bulb" style="background: blue;"></span>
+            <span class="bulb" style="background: red;"></span>
+            <span class="bulb" style="background: green;"></span>
+            <span class="bulb" style="background: blue;"></span>
+        </div>
+        <div class=".chatbot-btn-container">
+            <button id="start-chat" class="start-chat-btn">Розпочати діалог</button>
+            <div id="chat-window" class="chat-window">
+                <div class="chat-header">Чат-бот</div>
+                <div id="chat-content" class="chat-content">
+                    <p>Привіт! Я ваш помічник. Виберіть одне з популярних питань або напишіть своє.</p>
+                    <div id="quick-questions" class="quick-questions">
+                        <button class="question-btn">Як працює ваш сайт?</button>
+                        <button class="question-btn">Де знайти розклад?</button>
+                        <button class="question-btn">Як зв'язатися з підтримкою?</button>
+                    </div>
+                </div>
+                <div class="chat-input-container">
+                    <input type="text" id="user-input" placeholder="Введіть ваше питання..." />
+                    <button id="send-btn">Надіслати</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="music-container">
+            <audio id="background-music" loop>
+                <source src="Wham!-Last Christmas.mp3" type="audio/mp3">
+                Ваш браузер не поддерживает аудио.
+            </audio>
+            <button id="music-toggle" onclick="toggleMusic()">🔊 Включить музыку</button>
+        </div>
+
+    </div>
+</body>
+</html>
